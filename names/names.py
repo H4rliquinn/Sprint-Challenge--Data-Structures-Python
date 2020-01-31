@@ -18,6 +18,8 @@ for name in names_2:
 duplicates = []
 for name_1 in names_1:
     if tree.contains(name_1):
+        # Old version ran at O(n^2) Time
+        # BST should reduce that to O(n log n)
         #     for name_2 in names_2:
         #         if name_1 == name_2:
         duplicates.append(name_1)
