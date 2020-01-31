@@ -51,7 +51,7 @@ class LinkedList:
             curr.next_node = prev
             prev = curr
             curr = nextTemp
-        return prev
+        self.head = prev
         # recurs
         # if self.head == None:
         #     return self
@@ -61,8 +61,3 @@ class LinkedList:
         # self.head.next_node.next_node = head
         # self.head.next_node = null
         # return node
-        # ME
-        # if self.next:
-        #     old_next = self.next.reverse_list()
-        # old_next.next = self
-        # return self
