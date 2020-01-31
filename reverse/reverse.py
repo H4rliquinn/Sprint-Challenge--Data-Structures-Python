@@ -52,12 +52,3 @@ class LinkedList:
             prev = curr
             curr = nextTemp
         self.head = prev
-        # recurs
-        # if self.head == None:
-        #     return self
-        # if self.head.next_node == None:
-        #     return self
-        # node = self.head.next_node.reverse_list()
-        # self.head.next_node.next_node = head
-        # self.head.next_node = null
-        # return node
