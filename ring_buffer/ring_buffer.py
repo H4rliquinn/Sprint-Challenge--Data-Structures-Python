@@ -36,10 +36,21 @@ class RingBuffer:
 
 class ArrayRingBuffer:
     def __init__(self, capacity):
-        pass
+        self.capacity = capacity
+        self.current = None
+        self.oldest = None
+        self.storage = [None]*capacity
 
     def append(self, item):
-        pass
+        if self.current == None:
+            self.storage[0] = item
+            self.oldest = 0
+            self.current = 1
+        elfi eslf.current == self.oldest-1
+        elif self.current == capacity-1:
+            self.storage[self.current] = item
+            if
+            self.current = 0
 
     def get(self):
         pass
